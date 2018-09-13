@@ -12,7 +12,7 @@ import Mapbox
 class CarsService {
 
     private var carsGateway: CarsGateway
-    static let locationQueue: DispatchQueue = DispatchQueue(label: "com.smedialink.cars.location", qos: .userInitiated)
+    static let locationQueue: DispatchQueue = DispatchQueue(label: "com.yuriimobile.cars.location", qos: .userInitiated)
     
     init(carsGateway: CarsGateway = NetworkAPI()) {
         self.carsGateway = carsGateway

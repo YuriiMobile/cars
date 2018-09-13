@@ -27,7 +27,7 @@ class NetworkAPI: CarsGateway {
 
     // To simulate pagination need to store all data from .json
     private lazy var items: [Car] = []
-    private let networkQueue: DispatchQueue = DispatchQueue(label: "com.smedialink.cars.network")
+    private let networkQueue: DispatchQueue = DispatchQueue(label: "com.yuriimobile.cars.network")
     private let decoder: JSONDecoder
     
     init(decoder: JSONDecoder = JSONDecoder()) {
