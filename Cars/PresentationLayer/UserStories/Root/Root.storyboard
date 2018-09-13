@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5hn-xd-PyD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CarsList-->
+        <scene sceneID="p5F-z6-bjd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CarsList" id="BvZ-F8-and" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ygW-xS-P3J"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dmq-Wa-xlr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-324" y="-253"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bHA-Ze-fRg">
+            <objects>
+                <navigationController id="5hn-xd-PyD" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oBi-fB-taw">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="n9L-kP-YG6" kind="relationship" relationship="rootViewController" id="pL9-TI-uD0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ENa-iZ-gkX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1630" y="-160"/>
+        </scene>
+        <!--Root Tab Bar View Controller-->
+        <scene sceneID="X2e-ow-s3N">
+            <objects>
+                <tabBarController storyboardIdentifier="RootTabBarViewController" id="n9L-kP-YG6" customClass="RootTabBarViewController" customModule="Cars" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="YFG-4M-q52"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ol8-CB-ksI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BvZ-F8-and" kind="relationship" relationship="viewControllers" id="7an-LQ-dfX"/>
+                        <segue destination="2q9-is-Pra" kind="relationship" relationship="viewControllers" id="fRu-C5-Ebq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pdT-3u-nRU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-870" y="-159"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="oCA-nA-7WZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Map" id="2q9-is-Pra" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="eHz-FC-4hR"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P1Q-du-axg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-344" y="-67"/>
+        </scene>
+    </scenes>
+</document>
